@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+ 
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp7.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+ 
+<body onLoad="MM_preloadImages('imagenes/b1.jpg','imagenes/fuertes_despues.jpg','imagenes/fuertes1_despues.jpg','imagenes/5mayo1.jpg','imagenes/fuertes_nuevos.jpg','imagenes/4mayo.png')">
+<div data-role="page" id="Principal" data-theme="c">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+     <h1>Batalla del 5 de Mayo</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+  <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:960px;height:150px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>Batalla</h1>
+ <div align="center">
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/b1.jpg',1)"><img src="imagenes/batalla-de-puebla.jpg" width="350" height="220" id="Image11"></a></div><br>
+   <div>
+   En México el 5 de Mayo se conmemora el día de la Batalla de Puebla, en la cual el ejército mexicano venció al ejército francés.</div>
+  </div>
+  </div>
+  
+<div>
+
+    <ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-c">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Antecedentes</h2> 
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Personajes</h2>
+       <p>Se muestran los más importantes</p>
+       </a>
+     </li>
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Desarrollo de la contienda</h2>
+      <p>Se muestra cuando inició, los lugares en donde ocurrieron, y las fechas de cada uno de los sucesos</p>
+      </a>
+    </li>
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>4 de mayo Atlixco</h2>
+      </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Lugares en la actualidad</h2>
+      <p>Muestra como actualmente se encuentran los lugares donde fueron los acontecimientos.</p>
+      </a>
+      </li>
+   </ul>
+   <br>
+   <div data-role="collapsible" data-content-theme="false">
+  <h1>Para más información visita</h1>
+   <!-- Start WOWSlider.com -->
+<iframe src="http://www.udg.mx/es/efemerides/5-mayo-0" style="width:400px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+  </div>
+   
+</div>
+ <div data-role="footer" align="center" data-theme="c" data-position="fixed">
+  <h4>Ana Lilia Martínez Poblano</h4>
+  <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="c">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+  <h1>ANTECEDENTES</h1>
+  </div>
+ <div data-role="content" align="center">
+  <div>
+     <p>La historia narra que todo comenzó hacia el año de 1862. Benito Juárez quien recientemente había sido elegido Presidente de México, suspendió los pagos de la deuda externa por dos años, ya que el país tenía una crisis financiera; así los franceses, españoles e ingleses vinieron a México con el fin de cobrarse a la fuerza la deuda.</p>
+<p>Pero los ingleses y los españoles se marcharon sin conseguir nada, en contraste los franceses no pensaban irse hasta haber triunfado, ya que Napoleón III pensaba establecer en México una monarquía favorable para Francia.</p>
+<p>Las tropas francesas estaban muy bien equipadas y eran mucho más grandes que el ejercito Mexicano; por lo que Benito Juárez convocó a toda la población a que luchara, así se formó un ejército de aproximadamente 4800 hombres.</p>
+  </div>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/64-fhQZ3-UM" frameborder="0" allowfullscreen></iframe>
+ </div>
+ <div data-role="footer" align="center" data-theme="c" data-position="fixed">
+  <h4>Ana Lilia Martínez Poblano</h4>
+  <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+</div>
+    
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="c">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+     <h1>PERSONAJES</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ 
+ <div data-role="collapsible" data-content-theme="false">
+    <h1>Benito Juárez</h1>
+    <p>El resto de las leyes que decretó Juárez fueron por ejemplo la Ley sobre la libertad de cultos, se prohibió la asistencia oficial a funciones de la Iglesia, se cesó la intervención del clero en cementerios y camposantos, entre otras. Esto evidentemente enfureció en su tiempo a los altos mandos religiosos.</p>
+<p>La controvertida Reforma dejó al erario mexicano en una situación precaria, por lo que el país dejó de tener la posibilidad de saldar sus deudas.</p> 
+<div align="center"> <img src="imagenes/benitojuarez.jpg" width="50%" height="25%"></div>
+     <br>
+  </div>
+ 
+ <div data-role="collapsible" data-content-theme="false">
+    <h1>Ignacio Zaragoza</h1>
+    <div>
+    <p>El pasaje más sobresalientes en la vida de este militar, fue cuando la naciente república mexicana, ahogada financieramente por todas las deudas y gastos de las guerras, decide, a través de Benito Juárez, decretar una moratoria y suspender los pagos de la deuda externa.</p>
+
+<p>Frente a este escenario, España, Francia e Inglaterra, países a los que se debía la mayor parte de la deuda, inconformes, integran una alianza tripartita y con sus fuerzas armadas llegan al puerto de Veracruz.  Tras nuevas negociaciones España e Inglaterra deciden retirarse, pero Francia, en un franco deseo por construir un nuevo gobierno imperial y extender sus dominios en América, decidió proseguir con su incursión en territorio mexicano.</p>
+</div>
+<div align="center"> <img src="imagenes/ignacio-zaragoza-batalla.jpg" width="50%" height="25%"></div>
+     <br>
+  </div>
+  
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Miguel Negrete</h1>
+    <div>
+    <p>Negrete hizo a un lado su ideología conservadora y participó en la defensa del territorio mexicano, ante el avance de las tropas francesas hacia el centro de México, Negrete reacciona y se pone de parte del bando liberal con su célebre frase "Yo tengo Patria antes que Partido".</p>
+
+<p>Unido al ejército republicano y a las órdenes del general Ignacio Zaragoza, ambos se cubren de gloria en la Batalla de Las Cumbres y en la Batalla de Puebla el 5 de mayo de 1862, llegando a ser considerado como el segundo héroe de dicha batalla al defender el Fuerte de Loreto.</p>
+</div>
+<div align="center"> <img src="imagenes/miguel.jpg" width="50%" height="25%"></div>
+     <br>
+  </div>
+  
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Porfirio Díaz</h1>
+    <div>
+    <p>Según el Instituto Nacional de Estudios Históricos de las Revoluciones de México “las fuerzas del general Porfirio Díaz y las caballerías del coronel Antonio Álvarez rechazaron a los franceses hasta la hacienda de San José, obligándolos a aceptar su derrota y retirarse rumbo a Orizaba”. </p>
+
+<p>Después del triunfo de las fuerzas mexicanas, Porfirio Díaz, quien entonces tenía 32 años, escribió una carta a su hermana Nicolasa. La carta está fechada el 10 de mayo de 1862.</p>
+</div>
+<div align="center"> <img src="imagenes/porfi.jpg" width="50%" height="25%"></div>
+     <br>
+  </div>
+  
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Antonio Álvarez</h1>
+    <div>
+    <p>Tres veces los franceses asaltaron las posiciones mexicanas, sin lograr su objetivo y sufriendo numerosas pérdidas. Los contingentes de los generales Porfirio Díaz, Miguel Negrete, Felipe Berriozábal y  la caballería del coronel Antonio Álvarez derrotaron al que en ese entonces era considerado el mejor ejército del mundo. La soberbia y falta de visión de Lorencez que subestimó a su bien motivado enemigo fueron determinantes en la derrota como también lo fueron la estrategia y el valor de los generales mexicanos.</p></div>
+    <div align="center"> <img src="imagenes/antonio.jpg" width="50%" height="25%"></div>
+     <br>
+  </div>
+  
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Maximiliano</h1>
+    <div>
+    <p>La primera victoria de México no duró mucho tiempo. Un año después, treinta y cinco mil tropas francesas lograron derrotar al ejército mexicano, y de esa forma Francia logró tomar control de la Ciudad de México e impusieron al austriaco Maximiliano de Habsburgo y su esposa Carlota como emperador y emperatriz de México. El emperador no sostuvo por mucho su imperio: la victoria de Francia duró sólo 3 años. En 1867, y debido a la conflictiva situación en Europa y a la presión de Estados Unidos, el emperador Napoleón III ordenó retirar el apoyo militar y económico a Maximiliano. </p>
+    </div>
+<div align="center"> <img src="imagenes/maxi.jpg" width="50%" height="25%"></div>
+     <br>
+  </div>
+  </div>
+ </div>
+ 
+ <div data-role="footer" align="center" data-theme="c" data-position="fixed">
+  <h4>Ana Lilia Martínez Poblano</h4>
+  <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+ </div>
+</div>
+
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="c">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+ <h1>DESARROLLO DE LA CONTIENDA</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <p>Asegurado el paso de Acultzingo, el 2 de mayo de 1862 la columna principal del ejército expedicionario francés salió de San Agustín del Palmar, en Veracruz, para cruzar la Sierra Madre Oriental y dirigirse hacia Puebla, paso obligado para llegar a la capital del país y que era además uno de los bastiones del Partido Conservador, donde esperaban ser recibidos "con una lluvia de rosas", como le aseguró Saligny a Napoleón III en una carta.El 3 de mayo por la noche, el general Zaragoza arribó a Puebla, dejando en su retaguardia una brigada de caballería para hostigar a los invasores. Los efectivos del Ejército de Oriente se organizaron por las calles desiertas de la ciudad, ya que la mayoría de la población era partidaria de la invasión.</p>
+ <p>Zaragoza estableció su cuartel a unos cuantos metros de la línea de batalla, donde estableció el plan para la defensa de la plaza (ver tabla superior), que consistió en concentrar los pertrechos en el sur y oriente de la ciudad, esperando evitar que los franceses alcanzaran al área urbana de Puebla.</p>
+
+<p>El ala derecha mexicana la cubrían las tropas de Oaxaca dirigidas por Porfirio Díaz. El centro de la línea lo ocuparon Felipe Berriózabal y Francisco Lamadrid con las tropas del Estado de México y San Luis Potosí. La izquierda se apoyó en el cerro de Acueyametepec ubicado en el norte de la ciudad y en cuya cumbre se ubicaban los Fuertes de Loreto y Guadalupe, con el general Miguel Negrete a la cabeza de la Segunda División de Infantería. La artillería sobrante la colocaron en los fortines y reductos dentro de Puebla, quedando al mando del general Santiago Tapia.</p>
+
+<p>A las 9:15 de la mañana del 5 de mayo, los franceses aparecieron en el horizonte, avanzando desde la cercana Hacienda de Rementería, cruzando fuego con las guerrillas de caballería que se batían en retirada y que no se replegaron hasta que las líneas francesas estuvieron formadas y listas para avanzar. La batalla se inició en forma a las 11:15 de la mañana, anunciándose con un cañonazo desde el Fuerte de Guadalupe y acompañado por los repiques de las campanas de la ciudad. En ese momento se dio una maniobra sorpresiva: la columna francesa, que venía avanzando en orden de oriente a poniente, se dividió en dos: la primera, compuesta por aproximadamente 4000 hombres y protegida con su artillería, dio un violento viraje hacia la derecha y se dirigió hacia los fuertes; mientras que la segunda columna, compuesta por el resto de la infantería, quedó como reserva.</p>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','imagenes/5mayo1.jpg',1)"><img src="imagenes/5mayo.jpg" width="300" height="200" id="Image8"></a></p>
+ </div>
+ </div>
+ <div data-role="footer" align="center" data-theme="c" data-position="fixed">
+  <h4>Ana Lilia Martínez Poblano</h4>
+  <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="c">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+ <h1>4 DE MAYO ATLIXCO</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <p>El 4 de mayo, los exploradores mexicanos volvieron con noticias de que una columna de conservadores a caballo, al mando de Leonardo Márquez y José María Cobos, marchaba por la zona de Atlixco para unirse con las fuerzas de Lorencez en el ataque a Puebla. Zaragoza envió una brigada de 2000 hombres bajo el mando de Tomás O'Horán y Antonio Carbajal, con el fin de detenerlo, lo cual lograron. Aunque sus fuerzas habían disminuido, los mexicanos se prepararon para la defensa de Puebla. Contaban con dos baterías de artillería de batalla y dos de montaña, cubriendo los fuertes con 1200 hombres y formando a otros 3500 en cuatro columnas de infantería con una batería de batalla y una brigada de caballería por el lado del camino a Amozoc.</p>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','imagenes/4mayo.png',1)"><img src="imagenes/atlixco.png" width="340" height="405" id="Image1"></a> </div>
+ </div>
+ <div data-role="footer" align="center" data-theme="c" data-position="fixed">
+  <h4>Ana Lilia Martínez Poblano</h4>
+  <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="c">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+ <h1>LUGARES EN LA ACTUALIDAD</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>Fuertes de Loreto y Guadalupe </h2>
+ </div>
+ <div align="center">
+ <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','imagenes/fuertes_despues.jpg',1)"><img src="imagenes/fuertes_antes.jpg" width="300" height="398" id="Image16"></a></p>
+ <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/fuertes1_despues.jpg',1)"><img src="imagenes/fuertes1_antes.jpg" width="400" height="395" id="Image17"></a></p>
+ Por su importancia estratégica, durante la intervención francesa los fuertes sirvieron como cuartel de operaciones del Ejército de Oriente y punto central de las batallas que se libraron en Puebla. Por su ubicación y las defensas que en su torno se concentraron, los fuertes representaron la "puerta" de México: si caían, la rendición de Puebla era inevitable y con ello se abría el paso franco hacia la Ciudad de México. Por eso las fuerzas francesas los atacaron en primer lugar durante la batalla del 5 de mayo de 1862, y al año siguiente, fortalecidos y con un contingente mucho más numeroso, los sometieron a un bombardeo inmisericorde hasta dejarlos convertidos en ruinas.<br>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/fuertes_nuevos.jpg',1)"><img src="imagenes/fuertes.jpg" width="600" height="364" id="Image18"></a><br>
+  <p> El Museo de la No Intervención "Fuerte de Loreto" fue inaugurado en 1972 en una fortaleza construida en el siglo XVIII y sede de la batalla del 5 de mayo de 1862 entre los ejércitos mexicano y francés. El recinto se ha destacado por difundir el nacionalismo, la identidad y el orgullo mexicanos.</p> 
+
+<p>El recorrido se inicia con una vista del área de banderas, antes de ingresar a las salas históricas, con temas como la Reforma, los antecedentes de la invasión francesa, la intervención, los ejércitos participantes en esa guerra y el general Ignacio Zaragoza, que comandó a las tropas mexicanas. </p>
+
+<p>En otra sala se explican hechos relacionados con la batalla de Puebla, en especial en la zona de los fuertes. El recorrido histórico continúa en la sala del imperio y la oposición juarista a éste; la llegada de Juárez al poder, la restauración de la República y la conformación de la nación.</p> </div>
+ <div data-role="footer" align="center" data-theme="c" data-position="fixed">
+  <h4>Ana Lilia Martínez Poblano</h4>
+  <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+ </div>
+ </div>
+
+ </body>
+ </html>
